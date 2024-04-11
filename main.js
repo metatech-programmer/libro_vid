@@ -6,6 +6,7 @@ const icons = document.querySelectorAll(".icons");
 const if_video_filosofia = document.getElementById("video_filosofia");
 const div_preguntas = document.querySelector(".preguntas");
 const div_video = document.querySelector(".video");
+const img_bien = document.querySelector(".img-bien");
 /* score */
 const btn_score = document.querySelector(".score");
 const nombres = document.querySelector(".nombres");
@@ -32,6 +33,12 @@ btns_happy.forEach((btn) => {
       confettiNumber: 30,
     });
     document.getElementById("felicitacion").play();
+    img_bien.classList.remove("hidden");
+    img_bien.classList.add("jump");
+    setTimeout(() => {
+      img_bien.classList.remove("jump");
+      img_bien.classList.add("hidden");
+    }, 2000)
   });
 });
 

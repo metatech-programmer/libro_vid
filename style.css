@@ -1,0 +1,64 @@
+.jump{
+animation: jump 0.5s;
+}
+@keyframes jump {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.rainbow_purple {
+  background: linear-gradient(45deg, #7a00ff, #5b02bb, #470d85, #7f35ce, #2f0f52, #835bad, #7a00ff, #ff00c8, #8849ca);
+  background-size: 400% 400%;
+  animation: rainbow_purple 20s ease infinite;
+}
+
+
+
+@keyframes 
+rainbow_purple {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+.difunminar_backdrop {
+  animation: difunminar_backdrop 0.5s;
+}
+
+@keyframes difunminar_backdrop {
+  0% {
+   filter: blur(3px);
+  }
+  100% {
+   filter: blur(0px);
+  }
+}
+
+.nombres {
+  animation: names 60s ease infinite; 
+} 
+
+@keyframes names {
+  0% {
+   translate: -20% 0px;
+  }
+  50% {
+   translate: -70% 0px;
+  }
+  100% {
+   translate: -20% 0px;
+  }
+}

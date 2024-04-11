@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="libro de la agonía de eros - Actividad Filosofia Politica">
+        <meta property="og:description" content="Libro de la Agonía de Eros.">
+        <meta property="og:image" content="/thumbnail.webp" alt="thumbnail">
+        <meta property="og:url" content="https://libro-vid.vercel.app/">
+        <meta property="og:type" content="website">
+        <link rel="shortcut icon" href="/eros.ico" type="image/x-icon">
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>La Agonía de Eros - Pagina Web</title>
+
+    </head>
+
+    <body>
+
+        <button
+            class="btn_media absolute top-4 left-6 bg-teal-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded-full w-20 h-20  hover:bg-teal-600 hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 hover:scale-105 active:scale-95 duration-200 shadow-lg shadow-indigo-500/50 z-10"><img
+                class="icons" src="play-svgrepo-com.svg" alt="pause_play"></button>
+        <button
+            class="btn_media absolute top-4 right-10 bg-teal-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded-full w-20 h-20 hover:bg-teal-600 hover:ring-2 hover:ring-offset-2 hover:ring-teal-500 hover:scale-105 active:scale-95 duration-200 shadow-lg shadow-indigo-500/50 z-10"><img
+                class="icons" src="play-svgrepo-com.svg" alt="pause_play"></button>
+        <button class="score absolute bottom-4 right-10 bg-zinc-500 hover:bg-zinc-500 text-white font-bold py-2 px-4 rounded-full w-20 h-10 hover:bg-zinc-600 hover:ring-2 hover:ring-offset-2 hover:ring-zinc-500 hover:scale-105 active:scale-95 duration-200 shadow-lg shadow-indigo-500/50 z-10 opacity-50 hidden">SCORE</button>
+        <!-- //////////////////////////////////////////////////////////////////////////////// -->
+        <!-- BACK -->
+        <div class="background absolute h-screen w-screen z-20 bg-zinc-900 opacity-80 hidden"></div>
+        <!-- //////////////////////////////////////////////////////////////////////////////// -->
+        <!-- SCORE -->
+        <div
+            class="score_board absolute inset-y-28 left-1/4 h-1/2 w-1/2 p-2 z-30 flex flex-col justify-center items-center flex-wrap  text-center overflow-x-hidden bg-purple-500 border rounded-xl shadow-lg shadow-purple-500 hidden">
+            <h2 class="text-2xl m-2 text-white text-center font-bold uppercase">Ingresa tú nombre y presiona enviar</h2>
+            <input type="text" name="name" id="name" class="text-center border rounded-lg w-2/3 h-10 my-2"
+                placeholder="Ingresa tu nombre">
+            <button id="envNombre"
+                class="text-white text-center border rounded-lg w-36 h-10 bg-purple-600 my-6 hover:bg-purple-700 hover:ring-2 hover:ring-offset-2 hover:ring-purple-600 hover:scale-105 active:scale-95 duration-300 ">ENVIAR</button>
+
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////// -->
+        <!-- VIDEO -->
+        <div
+            class="video rainbow_purple w-screen h-screen p-2  flex justify-center items-center flex-wrap  bg-purple-300 text-white text-center overflow-x-hidden">
+            <video id="video_filosofia" class="border rounded shadow-lg shadow-purple-500 w-[90%] h-[90%] bg-zinc-900"
+                poster="unnamed-LvSS_NCUL-transformed.webp">
+                <source src="eros.webm" type="video/webm" srcset="eros.webm 480w, eros.webm 720w, eros.webm 1080w"
+                    sizes="(max-width: 480px) 480px, (max-width: 720px) 720px, 1080px">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////// -->
+        <!-- PREGUNTAS -->
+        <div
+            class="preguntas w-screen h-screen p-2  flex justify-center items-center flex-wrap  bg-zinc-900 text-white text-center overflow-x-hidden hidden">
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 w-[30%] ">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 1</h2>
+
+                <p class="question">¿Cuál es el tema principal del Capítulo 1? </p>
+                <div class="btns-container flex justify-center items-center w-full">
+
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">El
+                        erotismo y cómo refuerza los límites de la sociedad del rendimiento.</button>
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">El
+                        erotismo y cómo desafía los límites de la sociedad del rendimiento.</button>
+                </div>
+            </div>
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700  w-[30%]">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 2</h2>
+
+                <p class="question">¿De qué trata el capítulo "La Mera Vida"?</p>
+
+                <div class="btns-container flex justify-center items-center w-full">
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">Reflexiona
+                        sobre la pérdida del deseo en la era contemporánea.</button>
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">Reflexiona
+                        sobre el aumento del deseo en la era contemporánea.</button>
+                </div>
+            </div>
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700  w-[30%]">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 3</h2>
+
+                <p class="question">¿Qué explora el capítulo "Porno de la agonía de eros"?</p>
+                <div class="btns-container flex justify-center items-center w-full">
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">El
+                        papel del porno en la antigua Grecia y cómo afectaba la intimidad y conexión genuina.</button>
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">El
+                        papel del porno en la sociedad contemporánea y cómo afecta la intimidad y conexión
+                        genuina.</button>
+                </div>
+            </div>
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700  w-[30%]">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 4</h2>
+
+                <p class="question">¿Cuál es el tema del capítulo "Fantasía absurda"?</p>
+                <div class="btns-container flex justify-center items-center w-full">
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">La
+                        evolución de la realidad desde la plenodernidad hasta la actualidad y cómo la tecnología influye
+                        en el deseo.</button>
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">La
+                        evolución de la imaginación desde la premodernidad hasta la actualidad y cómo la información
+                        influye en el deseo. </button>
+                </div>
+            </div>
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700  w-[30%]">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 5</h2>
+
+                <p class="question">¿Qué representa el "Eros" y cómo se desvió según el texto?</p>
+                <div class="btns-container flex justify-center items-center w-full">
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">El
+                        "Eros" era un impulso sagrado hacia la riqueza material que se desvió a la mera
+                        sexualidad.</button>
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">
+                        El "Eros" era un impulso sagrado hacia la belleza universal que se desvió a la mera
+                        sexualidad.</button>
+                </div>
+            </div>
+
+            <div class="question_one border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700  w-[30%]">
+
+                <h2 class="title text-2xl m-2">Pregunta No. 6</h2>
+
+                <p class="question">¿De qué trata el "Capítulo final, el final de la teoría"?</p>
+                <div class="btns-container flex justify-center items-center w-full">
+                    <button
+                        class="confetti_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">Los
+                        sabios se revelan contra quienes creían que solo los datos fríos eran importantes, exaltando las
+                        grandes teorías movidas por el deseo de descubrir</button>
+                    <button
+                        class="error_btn border rounded p-4 m-4 text-sm text-center text-white bg-zinc-700 hover:bg-zinc-900 h-[13rem] hover:scale-105  active:scale-95 duration-300 shadow-xl hover:ring-2 hover:ring-offset-2 hover:ring-zinc-700 hover:font-bold ">Los
+                        sabios se unen a quienes creían que solo los datos fríos eran importantes, rechazando las
+                        grandes teorías.
+                    </button>
+
+                </div>
+            </div>
+
+
+            <audio src="Y2meta.app - Niños gritando - Kids Yeah Sound (128 kbps).mp3" id="felicitacion"
+                class="hidden"></audio>
+            <audio src="Y2meta.app - Buzzer Wrong Answer - Sound Effect (HD) (128 kbps).mp3" id="error"
+                class="hidden"></audio>
+
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////// -->
+        <!-- NOMBRES -->
+        <div class="nombres absolute bottom-0 z-30 text-end text-white text-xl w-screen py-2 opacity-50 text-zinc-200">
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////// -->
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
